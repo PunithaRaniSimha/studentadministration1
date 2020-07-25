@@ -1,0 +1,11 @@
+condition = True
+while(condition):
+    student_info =input("enter same student information in the following format(name age contact_number e-mail_id):")
+    print("enter information:" + student_info)
+    student_info_list = student_info.split(" ")
+    print("enter split up information is:" + str(student_info_list))
+    condition_check = input("enter(yes/no) if you want to enter information for another student:")
+    if condition_check =="yes":
+        condition = True
+    elif condition_check == "no":
+        condition = False
